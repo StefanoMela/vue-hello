@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="./JS/script.js" defer></script>
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Vue - Hello !</title>
+</head>
+<body>
+<div class="container d-flex justify-content-center pt-5">
+    <div id="app" class="card align-self-center" style="width: 18rem;">
+        <h1  :class='txtClasses' class="card-title"> {{ message }}</h1>
+        <img src='./img/walter.jpg' :class='imgClasses' alt="Walter, CEO">
+        <p class="card-text p-2 text-center">Vuoi cambiare il titolo ? Scrivi qui sotto !</p>
+        <input v-model="message">
+    </div>
+</div>
+
+</body>
+</html>
