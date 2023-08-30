@@ -16,6 +16,13 @@
     <div id="app" class="card align-self-center" style="width: 18rem;">
         <h1  :class="txtClasses" class="card-title"> {{ message }}</h1>
         <img :src="image" :class="imgClasses" alt="Walter, CEO">
+
+        <!-- 
+         Si può concatenare anche come in JS con :src=" './img/' + image" 
+         NB. Attenzione a doppi apici e apici singoli, doppi servono a cercare,
+         singoli sono per l'attributo
+        -->
+
         <p class="card-text p-2 text-center">Vuoi cambiare il titolo ? Scrivi qui sotto !</p>
         <input v-model="message">
     </div>
