@@ -14,8 +14,8 @@
 <body>
 <div class="container d-flex justify-content-center pt-5">
     <div id="app" class="card align-self-center" style="width: 18rem;">
-        <h1  :class='txtClasses' class="card-title"> {{ message }}</h1>
-        <img src='./img/walter.jpg' :class='imgClasses' alt="Walter, CEO">
+        <h1  :class="txtClasses" class="card-title"> {{ message }}</h1>
+        <img :src="image" :class="imgClasses" alt="Walter, CEO">
         <p class="card-text p-2 text-center">Vuoi cambiare il titolo ? Scrivi qui sotto !</p>
         <input v-model="message">
     </div>
